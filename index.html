@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 >Student Management System</h1>
+<form id="form">
+  <h2>Student Registration Form</h2>
+  <label> First Name</label>
+  <input type="text"  id="fname" required>
+  <label>Last Name</label>
+        <input type="text" id="lname" required>
+
+        <label>Gender</label>
+        <select id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+
+        <label>Phone No</label>
+        <input type="tel" id="phone" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+   
+        <label>Address</label>
+        <textarea id="address" rows="2" required></textarea>
+
+        <button type="submit" id="submitBtn">Save</button>
+        <button type="reset" id="rsetBtn">Clear</button>
+</form>    
+
+<h3>Student Registration DataList</h3>
+<div class="controls-bar">
+  <div class="rows-per-page-control">
+      <label>row per page:</label>
+      <select id="rowsPerPage">
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+      </select>
+  </div>
+
+  <div class="search-container">
+      <label>Search:</label>
+      <input type="search" id="searchInput" placeholder="Search">
+  </div>
+</div>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SR_No</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Gender</th>
+      <th>Phone Number</th>
+      <th>Email ID</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>  
+  </thead>
+     <tbody id="stuTable"></tbody>
+</table>
+
+<div class="pagination-controls">
+    <button id="prevBtn">Previous</button>
+    <span id="pageInfo">Page 1 of 1</span>
+    <button id="nextBtn">Next</button>
+</div>
+
+<p id="totalRecordsContainer">
+    Total Records: <span id="totalRecords">0</span>
+</p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

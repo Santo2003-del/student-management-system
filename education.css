@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.header-container {
+    max-width: 90%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#i{
+    padding-left:700px ;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.input-bar {
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.input-bar input[type="text"], .input-bar input[type="search"] {
+    flex-grow: 1; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#submitEduBtn {
+    padding: 8px 15px;
+    border: 1px solid #777;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    flex-shrink: 0; 
+}
+
+.controls-bar {
+    max-width: 90%;
+    margin: 25px auto 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.rows-per-page-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#eduRowsPerPage {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+}
+
+#eduSearchInput {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+table {
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid #eee;
+    white-space: nowrap; 
+}
+
+thead th {
+    background-color: #e9e9e9;
+    color: #333;
+    font-weight: bold;
+}
+
+.pagination-controls {
+    width: 90%;
+    margin: 15px auto 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+}
+
+#totalEduRecordsContainer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}

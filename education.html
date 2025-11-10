@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Education Info</title>
+    <link rel="stylesheet" href="education.css" />
+  </head>
+  <body>
+    <h1>Add Education Info</h1>
+
+    <form id="educationForm" class="input-bar">
+      <input type="text" id="edu_class" placeholder="Class" required />
+      <input type="text" id="edu_subject" placeholder="Subject" required />
+      <input type="number" id="edu_mark" placeholder="Mark" required />
+
+      <button type="submit" id="submitEduBtn">Add Record</button>
+    </form>
+
+   
+
+    <h2>Student Eduction Datalist</h2>
+
+     <div class="controls-bar">
+      <div class="rows-per-page-control">
+        <label>Rows per page:</label>
+        <select id="eduRowsPerPage">
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+      <label id="i">Search:</label>
+      <input type="search" id="eduSearchInput" placeholder="Search " />
+    </div>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Class</th>
+          <th>Subject</th>
+          <th>Mark</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="eduTableBody"></tbody>
+    </table>
+
+    
+    <div class="pagination-controls">
+      <button id="eduPrevBtn">Previous</button>
+      <span id="eduPageInfo">Page 1 of 1</span>
+      <button id="eduNextBtn">Next</button>
+    </div>
+
+    <p id="totalEduRecordsContainer">
+      Total Records: <span id="totalEduRecords">0</span>
+    </p>
+
+    <button id="backBtn">Go Back to Main List</button>
+    <script src="education.js"></script>
+  </body>
+</html>

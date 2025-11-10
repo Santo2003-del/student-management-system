@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile View</title>
+    <link rel="stylesheet" href="view.css"> 
+</head>
+<body>
+    
+    <h1>Student Full Information</h1> 
+    
+    <div class="main-container">
+        
+        <h2>Personal Details</h2>
+        <div id="studentDetails" class="detail-box">
+            
+            <p><strong>First Name:</strong> <span id="viewFirstName"></span></p> 
+            <p><strong>Last Name:</strong> <span id="viewLastName"></span></p> 
+            <p><strong>Gender:</strong> <span id="viewGender"></span></p>
+            <p><strong>Phone No:</strong> <span id="viewPhone"></span></p>
+            <p><strong>Email ID:</strong> <span id="viewEmail"></span></p>
+            <p><strong>Address:</strong> <span id="viewAddress"></span></p>
+        </div>
+
+        
+        <h2>Education History</h2>
+        <div class="controls-bar">
+            <div class="rows-per-page-control">
+                <label>Rows per page:</label>
+                <select id="viewRowsPerPage">
+                    <option value="5" selected>5</option>
+                    <option value="10">10</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <label id="Lid">Search:</label>
+            <input type="search" id="viewSearchInput" placeholder="Search Education Record">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Class</th>
+                    <th>Subject</th>
+                    <th>Mark</th>
+                </tr>
+            </thead>
+            <tbody id="viewEduTableBody"></tbody>
+        </table>
+
+        <div class="pagination-controls">
+            <button id="viewPrevBtn">Previous</button>
+            <span id="viewPageInfo">Page 1 of 1</span>
+            <button id="viewNextBtn">Next</button>
+        </div>
+
+        <p id="totalRecordsContainer">
+            Total Education Records: <span id="totalViewRecords">0</span>
+        </p>
+    </div>
+    
+    <button id="backBtn" class="back-button">Go Back to Main List</button>
+
+    <script src="view.js"></script> 
+</body>
+</html>
